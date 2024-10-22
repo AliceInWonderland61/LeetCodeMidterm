@@ -1,9 +1,8 @@
-fn create_hello_world()->impl Fn() ->String{
-    || String::from ("Hello World")
+fn create_hello_world() ->String{
+     String::from ("Hello World")
 }
 
 fn main()
 {
-    let function=create_hello_world();
-    println!("{}",function());
+   println!("{}", create_hello_world());
 }
